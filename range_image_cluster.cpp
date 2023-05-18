@@ -10,7 +10,7 @@
 typedef pcl::PointXYZI PointType;
 
 int main() {
-    std::string bin_file = "path/to/your/file.bin";
+    std::string bin_file = "/tmp/mappedgroundPointCloud.bin";
     std::ifstream file(bin_file, std::ios::in | std::ios::binary);
     if (!file.is_open()) {
         std::cerr << "Failed to open file: " << bin_file << std::endl;
